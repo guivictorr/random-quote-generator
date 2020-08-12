@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 import Quote from '../../components/Quote';
 import Footer from '../../components/Footer';
@@ -25,10 +26,10 @@ function Home() {
       <div className="content">
         <Quote text={randomQuote.quoteText}/>
 
-        <button className="authorContainer">
+        <Link to={randomQuote.quoteAuthor} className="authorContainer">
           <strong>{randomQuote.quoteAuthor}</strong>
           <p>{randomQuote.quoteGenre}</p>
-        </button>
+        </Link>
       </div>
 
       <Footer/>

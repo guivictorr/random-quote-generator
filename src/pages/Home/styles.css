@@ -25,6 +25,7 @@
   transition: all 0.2s;
   color: #4F4F4F;
   padding: 30px;
+  text-decoration: none;
 }
 
 .authorContainer:hover{
