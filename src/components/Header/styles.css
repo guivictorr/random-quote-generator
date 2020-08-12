@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 62px;
+  margin-right: 127px;
+}
+
+header button {
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  cursor:pointer;
+  outline: transparent;
+  color: #333333
+}

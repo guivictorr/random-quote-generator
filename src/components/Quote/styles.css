@@ -1,0 +1,16 @@
+.quoteContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  height: auto;
+  width: 814px;
+  border-left: solid 8px #F7DF94;
+  font-size: 36px;
+  font-family: Raleway;
+} 
+
+.quoteContainer p {
+  width: 614px;
+}
