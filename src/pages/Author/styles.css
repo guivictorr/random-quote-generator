@@ -1,19 +1,27 @@
-.authorQuotesContainer{
-  height: 100vh;
-}
-
-.authorQuotesContent{
+.authorQuotesContainer {
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.authorQuotesContent {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  margin-bottom: 120px;
+}
+
 .authorQuotesContent h1 {
   font-family: Raleway;
+  font-size: 36px;
+  color: #333333;
+  margin-left: 100px;
+
 }
 
 .authorQuotesContent ul li {
+  margin-top: 200px;
   list-style: none;
-  margin: 124px;
 }

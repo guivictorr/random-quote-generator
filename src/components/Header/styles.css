@@ -2,8 +2,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 62px;
-  margin-right: 127px;
+  height: 100px;
+  width: 100%;
 }
 
 header button {
@@ -14,5 +14,6 @@ header button {
   border: none;
   cursor:pointer;
   outline: transparent;
-  color: #333333
+  color: #333333;
+  margin-right: 70px;
 }
