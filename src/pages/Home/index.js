@@ -1,27 +1,31 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Quote from '../../components/Quote';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
-import api from '../../services/api'
 import './styles.css'
+import api from '../../services/api';
 
 function Home() {
 
   const [randomQuote, setRandomQuote] = useState([])
 
-  useEffect(() => {
+  function handleRandomQuote() {
     api.get('/quotes/random').then(response => {
       const quote = response.data.quote
       setRandomQuote(quote)
     })
-  }, [])
+  }
 
+  useEffect(() => {
+    handleRandomQuote()
+  }, [])
+  
   return (
     <div className="container">
-        <Header setRandomQuote={setRandomQuote}/>
+        <Header handleRandomQuote={handleRandomQuote}/>
       <div className="content">
         <Quote text={randomQuote.quoteText}/>
         <Link to={randomQuote.quoteAuthor} className="authorContainer">
