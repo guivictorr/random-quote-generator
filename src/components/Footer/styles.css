@@ -1,6 +1,9 @@
 footer {
-  display:flex;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
 
   color: #A9A9A9;
   font-family: Montserrat;

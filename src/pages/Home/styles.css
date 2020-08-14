@@ -1,19 +1,13 @@
 .container {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+  height: 100vh;
 }
 
-.content {
+.content{
   display:flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 800px;
-  width: 900px;
-  
+  align-items: center;
+  height: 85vh;
 }
 
 .authorContainer {
@@ -25,7 +19,6 @@
   height: 150px;
   padding: 30px;
   margin-top: 84px;
-
   background-color: transparent;
   border: none;
   cursor:pointer;

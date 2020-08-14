@@ -12,7 +12,7 @@ function Author(props) {
   const authorName = props.match.params.authorname
 
   useEffect(() => {
-    api.get(`/authors/${authorName}?page=1&limit=10`).then(response => {
+    api.get(`/authors/${authorName}?page=1&limit=6`).then(response => {
       const quotes = response.data.quotes
       setAuthorQuotes([...quotes])
     })
@@ -23,8 +23,9 @@ function Author(props) {
       <Header/>
 
       <div className="authorQuotesContent">
-        <h1>{authorName}</h1>
+        
         <ul>
+          <h1>{authorName}</h1>
           {authorQuotes.map(quote => {
             return (
               <li key={quote._id}>
@@ -34,7 +35,7 @@ function Author(props) {
           })}
         </ul>
       </div>
-
+      
       <Footer/>
     </div>
   );

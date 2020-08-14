@@ -21,17 +21,14 @@ function Home() {
 
   return (
     <div className="container">
-      <Header setRandomQuote={setRandomQuote}/>
-
+        <Header setRandomQuote={setRandomQuote}/>
       <div className="content">
         <Quote text={randomQuote.quoteText}/>
-
         <Link to={randomQuote.quoteAuthor} className="authorContainer">
           <strong>{randomQuote.quoteAuthor}</strong>
           <p>{randomQuote.quoteGenre}</p>
         </Link>
       </div>
-
       <Footer/>
     </div>
   );

@@ -2,17 +2,16 @@
   display:flex;
   justify-content: flex-start;
   align-items: center;
+  width: 800px;
   height: auto;
 
   border-left: solid 8px #F7DF94;
   font-size: 36px;
   font-family: Raleway;
-  
 } 
 
 .quoteContainer p {
   margin-left: 100px;
-  
 }
 
 

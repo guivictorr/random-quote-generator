@@ -1,27 +1,23 @@
 .authorQuotesContainer {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
-.authorQuotesContent {
+.authorQuotesContent{
   display:flex;
   flex-direction: column;
-  justify-content: center;
-  width: 900px;
-  margin-bottom: 120px;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
 }
 
 .authorQuotesContent h1 {
   font-family: Raleway;
   font-size: 36px;
   color: #333333;
-  margin-left: 100px;
-
+  margin-left: 110px;
 }
 
 .authorQuotesContent ul li {
-  margin-top: 200px;
+  margin: 150px 0;
   list-style: none;
 }
