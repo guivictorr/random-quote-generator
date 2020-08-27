@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './styles.css'
+import { FooterContainer, FooterText } from './styles';
 
 function Footer() {
   return (
-    <footer>
-      <p>Guilherme Victor @ DevChallenges.io</p>
-    </footer>
+    <FooterContainer>
+      <FooterText>Guilherme Victor @ DevChallenges.io</FooterText>
+    </FooterContainer>
   );
 }
 

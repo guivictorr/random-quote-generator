@@ -1,40 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
+import { Container, Main} from './styles';
+
+import Header from '../../components/Header';
 import Quote from '../../components/Quote';
 import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Author from '../../components/Author';
 
-import './styles.css'
 import api from '../../services/api';
 
 function Home() {
-
-  const [randomQuote, setRandomQuote] = useState([])
+  const [randomQuote, setRandomQuote] = useState({});
 
   function handleRandomQuote() {
-    api.get('/quotes/random').then(response => {
-      const quote = response.data.quote
-      setRandomQuote(quote)
-    })
+    api.get('quotes/random')
+      .then(response => {
+        const data = response.data.quote
+        setRandomQuote(data)
+      })
   }
 
   useEffect(() => {
     handleRandomQuote()
   }, [])
-  
+
   return (
-    <div className="container">
-        <Header handleRandomQuote={handleRandomQuote}/>
-      <div className="content">
+    <Container>
+      <Header buttonFunction={handleRandomQuote}/>
+      <Main>
         <Quote text={randomQuote.quoteText}/>
-        <Link to={randomQuote.quoteAuthor} className="authorContainer">
-          <strong>{randomQuote.quoteAuthor}</strong>
-          <p>{randomQuote.quoteGenre}</p>
-        </Link>
-      </div>
+          <Author 
+            authorName={randomQuote.quoteAuthor} 
+            genre={randomQuote.quoteGenre}
+          />
+      </Main>
       <Footer/>
-    </div>
+    </Container>
   );
 }
 

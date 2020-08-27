@@ -1,11 +1,17 @@
 import React from 'react';
 
-import './styles.css'
-function Header({handleRandomQuote}) {
+import { HeaderContainer, Button, Text, Img } from './styles';
+
+import refreshIcon from '../../assets/images/refresh.svg'
+
+function Header({buttonFunction}) {
   return (
-    <header>
-      <button onClick={handleRandomQuote}>random</button>
-    </header>
+    <HeaderContainer>
+      <Button onClick={buttonFunction}>
+        <Text>random</Text>
+        <Img src={refreshIcon} alt="Nova Frase"/>
+      </Button>
+    </HeaderContainer>
   );
 }
 

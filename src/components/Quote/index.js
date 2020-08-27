@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './styles.css'
+import { QuoteContainer, QuoteText, QuoteAuthor } from './styles';
 
 function Quote({ text }) {
   return (
-    <article className="quoteContainer">
-      <p>{text}</p>
-    </article>
+      <QuoteContainer>
+        <QuoteText>{text}</QuoteText>
+      </QuoteContainer>
   );
 }
 
