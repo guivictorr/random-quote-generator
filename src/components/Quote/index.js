@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { QuoteContainer, QuoteText, QuoteAuthor } from './styles';
+import { QuoteContainer, QuoteText } from './styles';
 
 function Quote({ text }) {
   return (
