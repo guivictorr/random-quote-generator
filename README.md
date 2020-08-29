@@ -5,7 +5,7 @@
 
 ## 🔎 Veja como ficou
 
-Para visualizar o resultado final da minha versão da aplicação [Clique aqui](https://gifted-brown-59d81b.netlify.app)
+Para visualizar o resultado final da minha versão da aplicação [Clique aqui](https://nifty-cori-9399c3.netlify.app)
 
 ## 🛠 Tecnologias
 
@@ -15,6 +15,7 @@ Frontend
 
 - [ReactJS](https://reactjs.org/)
 - [React Router](https://github.com/ReactTraining/react-router)
+- [Styled Components](https://styled-components.com)
 
 ## 🤔 Como contribuir
 
