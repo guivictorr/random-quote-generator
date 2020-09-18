@@ -6,8 +6,9 @@ import { Container, QuotesList, QuoteItem, QuoteAuthor } from './styles';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Quote from '../../components/Quote';
-import api from '../../services/api';
 import Loading from '../../components/Loading';
+
+import api from '../../services/api';
 
 function AuthorQuotes() {
   const [authorQuotes, setAuthorQuotes] = useState([]);
@@ -22,11 +23,11 @@ function AuthorQuotes() {
 
   async function handleAuthorQuotes(){
     setIsLoading(true)
-    await api.get(`/authors/${authorname}?page=1&limit=6`)
-    .then(response => {
-      const data = response.data.quotes
-      setAuthorQuotes(data)
-    })
+
+    const response = await api.get(`/authors/${authorname}?page=1&limit=6`)
+    const data = await response.data.quotes
+    setAuthorQuotes(data)
+
     setIsLoading(false)
   }
 

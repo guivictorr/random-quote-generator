@@ -11,5 +11,4 @@ export const LoadingText = styled.p`
   font-family: Raleway;
   font-size: 36px;
   color: #000000;
-  margin-left: 80px;
 `;

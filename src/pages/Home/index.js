@@ -12,12 +12,10 @@ import api from '../../services/api';
 function Home() {
   const [randomQuote, setRandomQuote] = useState({});
 
-  function handleRandomQuote() {
-    api.get('quotes/random')
-      .then(response => {
-        const data = response.data.quote
-        setRandomQuote(data)
-      })
+  async function handleRandomQuote() {
+    const response = await api.get('quotes/random')
+    const data = await response.data.quote
+    setRandomQuote(data)
   }
 
   useEffect(() => {
@@ -27,13 +25,13 @@ function Home() {
   return (
     <Container>
       <Header buttonFunction={handleRandomQuote}/>
-      <Main>
-        <Quote text={randomQuote.quoteText}/>
-          <Author 
-            authorName={randomQuote.quoteAuthor} 
-            genre={randomQuote.quoteGenre}
-          />
-      </Main>
+        <Main>
+          <Quote text={randomQuote.quoteText}/>
+            <Author 
+              authorName={randomQuote.quoteAuthor} 
+              genre={randomQuote.quoteGenre}
+            />
+        </Main>
       <Footer/>
     </Container>
   );
