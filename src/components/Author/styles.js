@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const ButtonText = styled.div`
   display:flex;
@@ -14,16 +13,14 @@ export const AuthorName = styled.p`
   font-family: Raleway;
 `
 
-export const AuthorButton = styled(Link)`
+export const AuthorButton = styled.div`
   display:flex;
-  text-decoration: none;
   justify-content: flex-start;
   align-items:center;
   width: 670px;
   height: 150px;
   background: transparent;
   border: none;
-  cursor:pointer;
   transition: all 0.2s;
   margin-top: 80px;
   &:hover {

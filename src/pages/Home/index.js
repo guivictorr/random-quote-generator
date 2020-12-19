@@ -14,8 +14,8 @@ function Home() {
 
   async function handleRandomQuote() {
     const response = await api.get('quotes/random')
-    const data = await response.data.quote
-    setRandomQuote(data)
+    const data = response.data.data;
+    setRandomQuote(...data)
   }
 
   useEffect(() => {
