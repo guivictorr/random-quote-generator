@@ -5,7 +5,7 @@
 
 ## 🔎 Veja como ficou
 
-Para visualizar o resultado final da minha versão da aplicação [Clique aqui](https://nifty-cori-9399c3.netlify.app)
+Para visualizar o resultado final da minha versão da aplicação [Clique aqui](https://random-quote-generator-snowy.vercel.app/)
 
 ## 🛠 Tecnologias
 
